@@ -7,5 +7,5 @@ return {
 		auto_update = true, -- Update header when saving.
 		user = "caide-so", -- Your user.
 		mail = "caide-so@student.42sp.org.br", -- Your mail.
-	}
+	},
 }
