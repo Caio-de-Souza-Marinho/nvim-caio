@@ -5,10 +5,8 @@ return {
 		null_ls.setup({
 			sources = {
 				null_ls.builtins.formatting.stylua,
-				null_ls.builtins.formatting.prettier.with({ filetypes = { "javascript", "typescript", "html", "css" } }),
-				null_ls.builtins.formatting.clang_format.with({ filetypes = { "cpp", "c" } }),
-				--null_ls.builtins.diagnostics.eslint.with({ filetypes = { "javascript", "typescript" } }),
-				--null_ls.builtins.diagnostics.cpplint.with({ filetypes = { "cpp" } }),
+				null_ls.builtins.formatting.prettier,
+				null_ls.builtins.formatting.clang_format,
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
